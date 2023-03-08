@@ -4,12 +4,15 @@ import InheritanceExample from './components/InheritanceExample';
 import StateExample from './components/StateExample'
 import RefExample from './components/RefExample';
 import ConditionalRenderExample from './components/ConditionalRenderExample';
+import ParentComponentExample from './components/ParentComponentExample';
+import ToDoBoard from './components/ToDoBoard';
+import PassUpStateP from './components/PassUpStateP';
 
 import './App.css'
 
 function App() {
 
-  let myName = "";
+  let myName = "Ethan";
   let skyIsBlue = true;
   return (
     <>
@@ -23,7 +26,14 @@ function App() {
         :
         <ConditionalRenderExample/>
       } */}
-      <RefExample/>
+      {/* <RefExample/> */}
+      {/* <ParentComponentExample/> */}
+      {/* <ToDoBoard/> */}
+      <PassUpStateP
+
+        ethanName = {myName}
+      
+      />
     </>
   )
 }
